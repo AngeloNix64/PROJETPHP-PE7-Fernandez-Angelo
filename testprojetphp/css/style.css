@@ -1,0 +1,103 @@
+.search-bar {
+    background-image: url('../img/akatsuki-laptop-7zboflia67cfczme.jpg');
+    background-size: cover;
+    opacity: 0.7; /* Utilisez opacity au lieu de filter */
+}
+
+.bg-body {
+    background-image: url('../img/cropped-1920-1200-1299471.jpg');
+    background-size: cover; /* Utilisez 'cover' pour redimensionner l'image */
+}
+
+/* Styles du menu hamburger */
+#menuToggle {
+    display: none;
+    cursor: pointer;
+}
+
+#menu {
+    display: flex; /* Utilisez flex pour aligner les boutons en ligne (horizontalement) par défaut */
+}
+
+#menu a {
+    margin: 0 10px; /* Ajoutez un espacement horizontal entre les boutons */
+}
+
+@media (max-width: 1026px) {
+    #menuToggle {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 68px; /* Ajustez la position en fonction de votre mise en page */
+        right: 10px;
+        background-color: rgb(17, 24, 39);
+        border: 1px solid #555;
+        padding: 10px;
+        border-radius: 5px;
+        width: 150px;
+        flex-direction: column; /* Affichez les boutons en colonne sous les 768px de largeur */
+    }
+
+    #menu a {
+        margin: 5px 0;
+    }
+
+    #menu:not(.hidden) {
+        display: flex;
+    }
+}
+
+/* Styles pour la couleur "Anime" */
+.neko-color {
+    color: rgb(28, 185, 244);
+}
+
+.bg-neko{
+    background-color: rgb(28, 185, 244);
+
+}
+
+.border-nav {
+    border-bottom: 4px solid rgb(28, 185, 244);
+}
+
+.border-footer {
+    border-top: 4px solid rgb(28, 185, 244);
+}
+
+.border-neko {
+    border: 4px solid rgb(28, 185, 244);
+}
+
+.border-footer-right{
+    border-right: 2px solid rgb(110, 131, 138);
+}
+
+.manga-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.manga-details img {
+    margin-right: 20px; /* Espacement entre l'image et les informations */
+    max-width: 50%; /* Ajuste la largeur de l'image */
+    border-radius: 8px; /* Ajoute des coins arrondis à l'image */
+}
+
+.manga-details-info {
+    max-width: 50%; /* Ajuste la largeur des informations */
+}
+
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-out.show {
+    opacity: 1;
+}
